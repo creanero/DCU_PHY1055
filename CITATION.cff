@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite as below."
+authors:
+- family-names: "Creaner"
+  given-names: "Oisin"
+  orcid: "https://orcid.org/0000-0002-1080-0090"
+- family-names: "Dempsey"
+  given-names: "Adam"
+- family-names: "Fleischer"
+  given-names: "Karsten"
+- family-names: "Ellingboe "
+  given-names: "Albert"
+- family-names: "Gaughran"
+  given-names: "Jennifer"
+title: "Numerical Methods Lab Excerpts"
+version: 0.0.1
+date-released: 2024-09-11
+url: "https://github.com/creanero/DCU_PHY1055
