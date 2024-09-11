@@ -24,7 +24,9 @@ def nonlinear1(t, y):
 
 def main():
     """
-
+    A main function used to ensure that the code is portable. By using if __name__ == '__main__': main() we can ensure
+    that python will not execute the code when functions or methods in this module are imported, only if we run it
+    directly. At this point, this structure isn't needed, but it's a good habit to get into.
     :return:
     """
     # define the initial variables
