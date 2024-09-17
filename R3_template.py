@@ -70,7 +70,7 @@ def main():
     plt.legend(loc=1)
 
     # creates the path to store the data. Note that the data is not stored in the code repo directory.
-    filename = generate_path(basename='Harmonic-init', extension='.png')  # uses the function defined above
+    filename = generate_path(basename='Harmonic-init', extension='png')  # uses the function defined above
 
     # saves and displays the file
     plt.savefig(filename, bbox_inches='tight')
