@@ -14,12 +14,16 @@ def driven_pendulum(t, y, b, omega_0, omega_d, y0):
 
 
 def placeholder_amplitudes(tf, n, omega_0, b, y0):
+    """
+    The code in this function needs to be extracted and incorporated into existing code
+    """
     amplitudes = []  # Create empty list to store amplitudes
     t = np.linspace(0.8*tf, tf, n)  # Change time array to include only later points
 
     driving_freq = np.linspace(0, 2*omega_0, 100)  # Create range of omega_d 20%-200% of omega_0
 
-    for omega_d in driving_freq:  # Loop through driving frequencies
+    # Loop through driving frequencies
+    for omega_d in driving_freq:
         # Define the anonymous function, including the changing omegad
         lfun = lambda t, y, : driven_pendulum(t, y, b, omega_0, omega_d)
         # Call the solver for this definition of lfun
@@ -36,4 +40,5 @@ def placeholder_amplitudes(tf, n, omega_0, b, y0):
         amplitudes.append((max(x)-min(x))/2)  # Find peak to peak amplitude
         # End of loop, continue with next omegad
     # Out of the loop
-    plt.plot(driving_freq, amplitudes) # Plot the amplitudes
+    # Plot the amplitudes
+    plt.plot(driving_freq, amplitudes)
