@@ -1,3 +1,5 @@
+# code courtesy of Adam Dempsey
+# modified for PHY1055 by Oisín Creaner
 # THIS ISN'T WORKING CODE. IT ONLY WORKS IF YOU CORRECTLY INCORPORATE IT INTO YOUR CODE
 from scipy import integrate
 

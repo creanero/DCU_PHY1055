@@ -1,3 +1,6 @@
+# code courtesy of Adam Dempsey
+# modified for PHY1055 by Oisín Creaner
+
 import numpy as np
 
 

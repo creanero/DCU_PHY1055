@@ -1,3 +1,6 @@
+# code courtesy of Adam Dempsey
+# modified for PHY1055 by Oisín Creaner
+
 # This file isn't a complete template, but rather gives an outline of what you need the function to do.
 # If you're feeling ambitious, you can keep these functions in a separate file and import them.
 # Look up how to do so for yourself, or experiment based on what you see in library imports

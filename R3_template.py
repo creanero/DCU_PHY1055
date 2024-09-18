@@ -1,5 +1,5 @@
-# Code courtesy of Adam Dempsey
-# extracted from workbooks on Loop
+# code courtesy of Adam Dempsey
+# modified for PHY1055 by Oisín Creaner
 
 import numpy as np
 import matplotlib.pyplot as plt
