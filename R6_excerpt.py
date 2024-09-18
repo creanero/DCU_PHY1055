@@ -5,7 +5,7 @@ from scipy import integrate
 
 def driven_pendulum():
     """
-    PLACEHOLDER: define this based on the previous damped_pendulum function
+    PLACEHOLDER: define this function yourself based on the previous damped_pendulum function
     """
     pass
 
