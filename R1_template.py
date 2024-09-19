@@ -30,10 +30,10 @@ def main():
     :return:
     """
     # define the initial variables
-    y0 = np.array([0]) # initial state at t = 0
-    t0 = 0 # initial time
-    tf = 20 # final time
-    n = 101 # Number of points at which output will be evaluated (note 101 points are needed for 100 spaces)
+    y0 = np.array([0])  # initial state at t = 0
+    t0 = 0  # initial time
+    tf = 20  # final time
+    n = 101  # Number of points at which output will be evaluated (note 101 points are needed for 100 spaces)
     # Note: this does not mean the integrator will take only n steps SciPy
     # will control this to control the error in the solution
 
@@ -43,11 +43,11 @@ def main():
     # Call the RK integrator and return the solution in the array "result"
     # Note that because the brackets aren't closed, the method integrate.solve_ivp()
     # behaves as though it was on just one line.
-    result = integrate.solve_ivp(fun = nonlinear1, # The function defining the derivative
-                                 t_span = (t0, tf), # Initial and final times
-                                 y0 = y0 , # Initial state
-                                 method = "RK45", # Integration method
-                                 t_eval = t ) # Time points for result to be reported
+    result = integrate.solve_ivp(fun=nonlinear1,  # The function defining the derivative
+                                 t_span=(t0, tf),  # Initial and final times
+                                 y0=y0,  # Initial state
+                                 method="RK45",  # Integration method
+                                 t_eval=t)  # Time points for result to be reported
 
     # Read the solution and time from the array returned by Scipy
     y = result.y[0]
