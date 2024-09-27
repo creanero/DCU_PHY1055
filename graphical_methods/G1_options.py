@@ -11,7 +11,7 @@ import numpy as np
 def grid_options(start, stop, stepsize=1, numpoints=11, option="linspace"):
     """
     This function demonstrates the difference between the arange and linspace methods of Numpy for creating
-    ordered ranges of values. Some more ways of doing this are listed in G0_ranges.py
+    ordered ranges of values. Some more ways of doing this are listed in G0_ranges.py   
     """
     if option == "arange":
         # arange creates a set of values between a start point and a stop point in steps of stepsize.
