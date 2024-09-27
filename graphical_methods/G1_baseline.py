@@ -1,3 +1,7 @@
+# code courtesy of Adam Dempsey
+# modified for PHY1055 by Oisín Creaner
+
+# import libraries
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -10,15 +14,15 @@ def main():
     :return:
     """
     plt.close()
-    X, Y = np.meshgrid(np.arange(0, 2 * np.pi, .2), np.arange(0, 2 * np.pi, .2))
-    Vx = np.cos(X)
-    Vy = np.sin(Y)
-    plt.figure(figsize=(6,6))
-    plt.gca().set_aspect('equal', adjustable='box') #Make plot box square
+    x, y = np.meshgrid(np.arange(0, 2 * np.pi, .2), np.arange(0, 2 * np.pi, .2))
+    vx = np.cos(x)
+    vy = np.sin(y)
+    plt.figure(figsize=(6, 6))
+    plt.gca().set_aspect('equal', adjustable='box')  # Make plot box square
     plt.xlabel('x')
     plt.ylabel('y')
     plt.title('Example of a quiver plot')
-    plt.quiver(X, Y, Vx, Vy, pivot='mid', label='$V_x$ = cos($x$), $V_y$ = sin($y$)')
+    plt.quiver(x, y, vx, vy, pivot='mid', label='$v_x$ = cos($x$), $v_y$ = sin($y$)')
     plt.legend()
     plt.show()
 
