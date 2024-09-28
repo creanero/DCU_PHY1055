@@ -18,12 +18,16 @@ def demo_multiplot(t, x, v):
     plt.figure()
     plt.plot(t, x, label='$x(t)$')
     plt.plot(t, v, label='$v(t)$')
+
+    # this will save the figure as a PDF in the directory you're running it from: is that what you want?
     plt.savefig('Solution.pdf', bbox_inches='tight')
 
     # plot the second figure
     plt.figure()
     plt.plot(v,x,'k')
     plt.axis('equal')
+
+    # this will save the figure as a PDF in the directory you're running it from: is that what you want?
     plt.savefig('Phase.pdf', bbox_inches='tight')
 
 
@@ -49,5 +53,7 @@ def demo_combined_plot(t, x, v):
     plt.subplot(1, 2, 2)
     plt.plot(v, x, 'k')
     plt.axis('equal')
+
+    # this will save the figure as a PDF in the directory you're running it from: is that what you want?
     plt.savefig('Solution-and-Phase.pdf', bbox_inches='tight')
 

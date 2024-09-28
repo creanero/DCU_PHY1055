@@ -1,14 +1,19 @@
 # code courtesy of Adam Dempsey
 # modified for PHY1055 by Oisín Creaner
+
+# THIS ISN'T WORKING CODE. IT ONLY WORKS IF YOU CORRECTLY INCORPORATE IT INTO YOUR CODE
 import matplotlib.pyplot as plt
-import numpy as np
 
 
 def multiple_plot_rf(r_mesh, f_mesh, dr, df, r, f, t):
     """
+    You could import this function and use it in the Lotka-Volterra model.
+    I would suggest you find a more elegant solution than that.
+
     When exploring options for parameters of ODEs it is useful to plot more than one specific quantity. For example in
     the LVM model it is helpful to look at vectors, time series, phase plots simultaneously.
-    The following code illustrates how mathplotlib is used to combine plots into one figure:
+    The following code illustrates how mathplotlib is used to combine plots into one figure.
+
     :param r_mesh: a meshgrid of possible values for rabbit population
     :param f_mesh: a meshgrid of possible values for fox population
     :param dr: the expected changes in rabbit population at a given point in the mesh
@@ -41,4 +46,6 @@ def multiple_plot_rf(r_mesh, f_mesh, dr, df, r, f, t):
     plt.plot(r, f, 'k', color='brown')
     plt.ylabel(r"$foxes$")
     plt.xlabel(r"$rabbits$")
+
+    # this will save the figure as a PDF in the directory you're running it from: is that what you want?
     plt.savefig('rab-fox-time-quiver.pdf', bbox_inches='tight')
